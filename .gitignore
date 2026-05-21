@@ -1,0 +1,90 @@
+# =============================================
+# Laravel / PHP
+# =============================================
+.env
+.env.testing
+.php_cs.cache
+.phpunit.result.cache
+/stubs
+/data
+/vendor
+/public/css
+/public/js
+/public/hot
+/public/storage
+/public/vendor
+/lang/vendor
+/storage/*.key
+/storage/logs/*.log
+/storage/dcc-data/
+/bootstrap/cache/*.php
+
+# =============================================
+# Node / Frontend
+# =============================================
+/node_modules
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn.lock
+yarn-error.log
+package-lock.json
+
+# =============================================
+# OpenWA (WhatsApp API Gateway)
+# =============================================
+OpenWA/.env
+OpenWA/node_modules/
+OpenWA/dist/
+OpenWA/data/
+OpenWA/.wwebjs_auth/
+OpenWA/.wwebjs_cache/
+OpenWA/dashboard/node_modules/
+OpenWA/dashboard/dist/
+OpenWA/dashboard/.env
+OpenWA/logs/
+OpenWA/*.log
+
+# =============================================
+# Python (unused virtual environment)
+# =============================================
+venv/
+__pycache__/
+*.pyc
+
+# =============================================
+# IDEs y Editores
+# =============================================
+.idea
+.vscode
+.vagrant
+*.swp
+*.swo
+
+# =============================================
+# Antigravity AI (archivos internos del agente)
+# =============================================
+.gemini/
+
+# =============================================
+# Sistema Operativo
+# =============================================
+.DS_Store
+Thumbs.db
+
+# =============================================
+# Testing / CI
+# =============================================
+/playwright-report
+/test-results/
+/blob-report/
+/playwright/.cache/
+
+# =============================================
+# Varios
+# =============================================
+Homestead.json
+Homestead.yaml
+/ignorables/*
+/docker-compose-collection
+*.hot

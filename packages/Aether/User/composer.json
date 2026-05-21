@@ -1,0 +1,27 @@
+{
+    "name": "aether/laravel-user",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@webkul.com"
+        }
+    ],
+    "require": {
+        "aether/laravel-core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aether\\User\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aether\\User\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

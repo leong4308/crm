@@ -1,0 +1,113 @@
+{
+    "name": "aether/laravel-crm",
+    "type": "project",
+    "description": "Aether CRM",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "barryvdh/laravel-dompdf": "^3.1",
+        "diglactic/laravel-breadcrumbs": "^10.0",
+        "enshrined/svg-sanitize": "^0.22.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "khaled.alshamaa/ar-php": "^6.3",
+        "konekt/concord": "^1.17",
+        "laravel/framework": "^12.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/tinker": "^2.10",
+        "laravel/ui": "^4.6",
+        "league/fractal": "^0.21.0",
+        "maatwebsite/excel": "^3.1",
+        "mpdf/mpdf": "^8.2",
+        "prettus/l5-repository": "^3.0",
+        "smalot/pdfparser": "^2.11",
+        "webklex/laravel-imap": "^6.0"
+    },
+    "require-dev": {
+        "aether/aether-package-generator": "dev-master",
+        "barryvdh/laravel-debugbar": "^3.14",
+        "fakerphp/faker": "^1.23",
+        "laravel/pint": "^1.18",
+        "laravel/sail": "^1.38",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "phpunit/phpunit": "^11.0",
+        "spatie/laravel-ignition": "^2.8",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.3.30"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Aether\\Activity\\": "packages/Aether/Activity/src",
+            "Aether\\Admin\\": "packages/Aether/Admin/src",
+            "Aether\\Attribute\\": "packages/Aether/Attribute/src",
+            "Aether\\Contact\\": "packages/Aether/Contact/src",
+            "Aether\\Core\\": "packages/Aether/Core/src",
+            "Aether\\DataGrid\\": "packages/Aether/DataGrid/src",
+            "Aether\\DataTransfer\\": "packages/Aether/DataTransfer/src",
+            "Aether\\Email\\": "packages/Aether/Email/src",
+            "Aether\\EmailTemplate\\": "packages/Aether/EmailTemplate/src",
+            "Aether\\Marketing\\": "packages/Aether/Marketing/src",
+            "Aether\\Installer\\": "packages/Aether/Installer/src",
+            "Aether\\Lead\\": "packages/Aether/Lead/src",
+            "Aether\\Product\\": "packages/Aether/Product/src",
+            "Aether\\Quote\\": "packages/Aether/Quote/src",
+            "Aether\\Tag\\": "packages/Aether/Tag/src",
+            "Aether\\User\\": "packages/Aether/User/src",
+            "Aether\\Warehouse\\": "packages/Aether/Warehouse/src",
+            "Aether\\WebForm\\": "packages/Aether/WebForm/src",
+            "Aether\\Automation\\": "packages/Aether/Automation/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/*/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

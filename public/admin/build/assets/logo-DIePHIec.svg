@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40">
+  <rect width="150" height="40" fill="none"/>
+  <path d="M20 30L30 10L40 30M25 22H35" stroke="#8DA399" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="50" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#54626F">Aether</text>
+</svg>
