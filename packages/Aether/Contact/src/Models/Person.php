@@ -2,11 +2,6 @@
 
 namespace Aether\Contact\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Aether\Activity\Models\ActivityProxy;
 use Aether\Activity\Traits\LogsActivity;
 use Aether\Attribute\Traits\CustomAttribute;
@@ -15,6 +10,11 @@ use Aether\Contact\Database\Factories\PersonFactory;
 use Aether\Lead\Models\LeadProxy;
 use Aether\Tag\Models\TagProxy;
 use Aether\User\Models\UserProxy;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Person extends Model implements PersonContract
 {

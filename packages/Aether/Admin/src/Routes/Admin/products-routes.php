@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Products\ActivityController;
 use Aether\Admin\Http\Controllers\Products\ProductController;
 use Aether\Admin\Http\Controllers\Products\TagController;
+use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['user']], function () {
     Route::controller(ProductController::class)->prefix('products')->group(function () {

@@ -2,16 +2,16 @@
 
 namespace Aether\Admin\Http\Controllers\Settings\Warehouse;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
-use Prettus\Repository\Criteria\RequestCriteria;
 use Aether\Admin\DataGrids\Product\ProductDataGrid;
 use Aether\Admin\DataGrids\Settings\WarehouseDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\AttributeForm;
 use Aether\Warehouse\Repositories\WarehouseRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
+use Prettus\Repository\Criteria\RequestCriteria;
 
 class WarehouseController extends Controller
 {

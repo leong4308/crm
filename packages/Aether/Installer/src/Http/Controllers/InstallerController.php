@@ -2,14 +2,14 @@
 
 namespace Aether\Installer\Http\Controllers;
 
+use Aether\Installer\Helpers\DatabaseManager;
+use Aether\Installer\Helpers\EnvironmentManager;
+use Aether\Installer\Helpers\ServerRequirements;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
-use Aether\Installer\Helpers\DatabaseManager;
-use Aether\Installer\Helpers\EnvironmentManager;
-use Aether\Installer\Helpers\ServerRequirements;
 
 class InstallerController extends Controller
 {

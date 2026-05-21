@@ -1,8 +1,8 @@
 <?php
 
+use Aether\User\Models\User;
 use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
-use Aether\User\Models\User;
 
 /*
 |--------------------------------------------------------------------------

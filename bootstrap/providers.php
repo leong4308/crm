@@ -1,9 +1,5 @@
 <?php
 
-use App\Providers\AppServiceProvider;
-use Barryvdh\DomPDF\ServiceProvider;
-use Konekt\Concord\ConcordServiceProvider;
-use Prettus\Repository\Providers\RepositoryServiceProvider;
 use Aether\Activity\Providers\ActivityServiceProvider;
 use Aether\Admin\Providers\AdminServiceProvider;
 use Aether\Attribute\Providers\AttributeServiceProvider;
@@ -23,6 +19,10 @@ use Aether\Tag\Providers\TagServiceProvider;
 use Aether\User\Providers\UserServiceProvider;
 use Aether\Warehouse\Providers\WarehouseServiceProvider;
 use Aether\WebForm\Providers\WebFormServiceProvider;
+use App\Providers\AppServiceProvider;
+use Barryvdh\DomPDF\ServiceProvider;
+use Konekt\Concord\ConcordServiceProvider;
+use Prettus\Repository\Providers\RepositoryServiceProvider;
 
 return [
     /*

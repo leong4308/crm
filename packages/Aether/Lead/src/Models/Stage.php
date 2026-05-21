@@ -2,8 +2,8 @@
 
 namespace Aether\Lead\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Lead\Contracts\Stage as StageContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Stage extends Model implements StageContract
 {

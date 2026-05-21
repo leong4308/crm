@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Settings\AttributeController;
 use Aether\Admin\Http\Controllers\Settings\DataTransfer\ImportController;
 use Aether\Admin\Http\Controllers\Settings\EmailTemplateController;
@@ -21,6 +20,7 @@ use Aether\Admin\Http\Controllers\Settings\Warehouse\WarehouseController;
 use Aether\Admin\Http\Controllers\Settings\WebFormController;
 use Aether\Admin\Http\Controllers\Settings\WebhookController;
 use Aether\Admin\Http\Controllers\Settings\WorkflowController;
+use Illuminate\Support\Facades\Route;
 
 /**
  * Configuración de rutas de grupo.

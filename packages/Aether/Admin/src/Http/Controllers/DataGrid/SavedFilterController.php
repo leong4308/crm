@@ -2,9 +2,9 @@
 
 namespace Aether\Admin\Http\Controllers\DataGrid;
 
-use Illuminate\Support\Facades\Event;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\DataGrid\Repositories\SavedFilterRepository;
+use Illuminate\Support\Facades\Event;
 
 class SavedFilterController extends Controller
 {

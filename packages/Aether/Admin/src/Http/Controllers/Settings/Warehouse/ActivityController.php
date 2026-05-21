@@ -2,11 +2,11 @@
 
 namespace Aether\Admin\Http\Controllers\Settings\Warehouse;
 
-use Illuminate\Http\Response;
 use Aether\Activity\Repositories\ActivityRepository;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Resources\ActivityResource;
 use Aether\Email\Repositories\EmailRepository;
+use Illuminate\Http\Response;
 
 class ActivityController extends Controller
 {

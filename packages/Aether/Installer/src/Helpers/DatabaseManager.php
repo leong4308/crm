@@ -2,11 +2,11 @@
 
 namespace Aether\Installer\Helpers;
 
+use Aether\Installer\Database\Seeders\DatabaseSeeder as CRMV1DatabaseSeeder;
 use Exception;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use Aether\Installer\Database\Seeders\DatabaseSeeder as CRMV1DatabaseSeeder;
 
 class DatabaseManager
 {

@@ -2,13 +2,6 @@
 
 namespace Aether\Admin\Providers;
 
-use Illuminate\Contracts\Debug\ExceptionHandler;
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Routing\Router;
-use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\ServiceProvider;
 use Aether\Admin\Bouncer;
 use Aether\Admin\Exceptions\Handler;
 use Aether\Admin\Http\Middleware\Bouncer as BouncerMiddleware;
@@ -20,6 +13,13 @@ use Aether\Lead\Models\Lead;
 use Aether\Product\Models\Product;
 use Aether\Quote\Models\Quote;
 use Aether\Warehouse\Models\Warehouse;
+use Illuminate\Contracts\Debug\ExceptionHandler;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Foundation\AliasLoader;
+use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
 
 class AdminServiceProvider extends ServiceProvider
 {

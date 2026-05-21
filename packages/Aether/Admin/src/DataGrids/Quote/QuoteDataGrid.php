@@ -2,11 +2,11 @@
 
 namespace Aether\Admin\DataGrids\Quote;
 
-use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\DB;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\DataGrid\DataGrid;
 use Aether\User\Repositories\UserRepository;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\DB;
 
 class QuoteDataGrid extends DataGrid
 {

@@ -2,11 +2,11 @@
 
 namespace Aether\Email\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Aether\Email\Console\Commands\ProcessInboundEmails;
 use Aether\Email\InboundEmailProcessor\Contracts\InboundEmailProcessor;
 use Aether\Email\InboundEmailProcessor\SendgridEmailProcessor;
 use Aether\Email\InboundEmailProcessor\WebklexImapEmailProcessor;
+use Illuminate\Support\ServiceProvider;
 
 class EmailServiceProvider extends ServiceProvider
 {

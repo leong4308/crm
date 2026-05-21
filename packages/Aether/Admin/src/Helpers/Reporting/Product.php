@@ -2,9 +2,9 @@
 
 namespace Aether\Admin\Helpers\Reporting;
 
+use Aether\Lead\Repositories\ProductRepository;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
-use Aether\Lead\Repositories\ProductRepository;
 
 class Product extends AbstractReporting
 {

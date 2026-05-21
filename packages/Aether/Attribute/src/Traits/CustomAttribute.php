@@ -2,9 +2,9 @@
 
 namespace Aether\Attribute\Traits;
 
-use Illuminate\Database\Eloquent\MassAssignmentException;
 use Aether\Attribute\Models\AttributeValueProxy;
 use Aether\Attribute\Repositories\AttributeRepository;
+use Illuminate\Database\Eloquent\MassAssignmentException;
 
 trait CustomAttribute
 {

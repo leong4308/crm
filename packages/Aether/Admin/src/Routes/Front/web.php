@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Route;
 
 /**
  * Rutas de origen.

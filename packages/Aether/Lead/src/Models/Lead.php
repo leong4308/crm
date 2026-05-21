@@ -2,11 +2,6 @@
 
 namespace Aether\Lead\Models;
 
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Aether\Activity\Models\ActivityProxy;
 use Aether\Activity\Traits\LogsActivity;
 use Aether\Attribute\Traits\CustomAttribute;
@@ -16,6 +11,11 @@ use Aether\Lead\Contracts\Lead as LeadContract;
 use Aether\Quote\Models\QuoteProxy;
 use Aether\Tag\Models\TagProxy;
 use Aether\User\Models\UserProxy;
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Lead extends Model implements LeadContract
 {

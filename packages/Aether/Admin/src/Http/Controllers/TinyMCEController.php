@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Http\Controllers;
 
+use Aether\Core\Traits\Sanitizer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Aether\Core\Traits\Sanitizer;
 
 class TinyMCEController extends Controller
 {

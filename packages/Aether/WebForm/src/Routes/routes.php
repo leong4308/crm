@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\WebForm\Http\Controllers\WebFormController;
+use Illuminate\Support\Facades\Route;
 
 Route::controller(WebFormController::class)->middleware(['web', 'admin_locale'])->prefix('web-forms')->group(function () {
     Route::get('forms/{id}/form.js', 'formJS')->name('admin.settings.web_forms.form_js');

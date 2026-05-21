@@ -2,12 +2,12 @@
 
 namespace Aether\Warehouse\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Activity\Models\ActivityProxy;
 use Aether\Activity\Traits\LogsActivity;
 use Aether\Attribute\Traits\CustomAttribute;
 use Aether\Tag\Models\TagProxy;
 use Aether\Warehouse\Contracts\Warehouse as WarehouseContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Warehouse extends Model implements WarehouseContract
 {

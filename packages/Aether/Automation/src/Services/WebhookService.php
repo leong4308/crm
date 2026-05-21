@@ -2,10 +2,10 @@
 
 namespace Aether\Automation\Services;
 
+use Aether\Contact\Repositories\PersonRepository;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Message;
-use Aether\Contact\Repositories\PersonRepository;
 
 class WebhookService
 {

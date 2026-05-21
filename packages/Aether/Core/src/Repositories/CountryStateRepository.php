@@ -2,8 +2,8 @@
 
 namespace Aether\Core\Repositories;
 
-use Prettus\Repository\Traits\CacheableRepository;
 use Aether\Core\Eloquent\Repository;
+use Prettus\Repository\Traits\CacheableRepository;
 
 class CountryStateRepository extends Repository
 {

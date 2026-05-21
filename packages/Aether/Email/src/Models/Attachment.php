@@ -2,9 +2,9 @@
 
 namespace Aether\Email\Models;
 
+use Aether\Email\Contracts\Attachment as AttachmentContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
-use Aether\Email\Contracts\Attachment as AttachmentContract;
 
 class Attachment extends Model implements AttachmentContract
 {

@@ -2,11 +2,11 @@
 
 namespace Aether\Installer\Http\Middleware;
 
+use Aether\Installer\Helpers\DatabaseManager;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Str;
-use Aether\Installer\Helpers\DatabaseManager;
 
 class CanInstall
 {

@@ -2,8 +2,8 @@
 
 namespace Aether\Installer\Listeners;
 
-use GuzzleHttp\Client;
 use Aether\User\Repositories\UserRepository;
+use GuzzleHttp\Client;
 
 class Installer
 {

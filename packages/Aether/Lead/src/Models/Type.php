@@ -2,8 +2,8 @@
 
 namespace Aether\Lead\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Lead\Contracts\Type as TypeContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Type extends Model implements TypeContract
 {

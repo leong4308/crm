@@ -2,14 +2,14 @@
 
 namespace Aether\Admin\Http\Controllers\Settings\Marketing;
 
-use Exception;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
 use Aether\Admin\DataGrids\Settings\Marketing\EventDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\MassDestroyRequest;
 use Aether\Marketing\Repositories\EventRepository;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
 
 class EventController extends Controller
 {

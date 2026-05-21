@@ -2,7 +2,6 @@
 
 namespace Aether\Automation\Helpers\Entity;
 
-use Illuminate\Support\Facades\Mail;
 use Aether\Admin\Notifications\Common;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Automation\Repositories\WebhookRepository;
@@ -12,6 +11,7 @@ use Aether\EmailTemplate\Repositories\EmailTemplateRepository;
 use Aether\Lead\Repositories\LeadRepository;
 use Aether\Quote\Contracts\Quote as ContractsQuote;
 use Aether\Quote\Repositories\QuoteRepository;
+use Illuminate\Support\Facades\Mail;
 
 class Quote extends AbstractEntity
 {

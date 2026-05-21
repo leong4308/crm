@@ -2,9 +2,9 @@
 
 namespace Aether\Tag\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Tag\Contracts\Tag as TagContract;
 use Aether\User\Models\UserProxy;
+use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model implements TagContract
 {

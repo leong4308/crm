@@ -2,9 +2,9 @@
 
 namespace Aether\Lead\Helpers;
 
+use Aether\Admin\Http\Requests\LeadForm;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use Aether\Admin\Http\Requests\LeadForm;
 
 class MagicAI
 {

@@ -2,8 +2,6 @@
 
 namespace Aether\Automation\Helpers\Entity;
 
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Mail;
 use Aether\Activity\Contracts\Activity as ContractsActivity;
 use Aether\Activity\Repositories\ActivityRepository;
 use Aether\Admin\Notifications\Common;
@@ -13,6 +11,8 @@ use Aether\Automation\Services\WebhookService;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\EmailTemplate\Repositories\EmailTemplateRepository;
 use Aether\Lead\Repositories\LeadRepository;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
 
 class Activity extends AbstractEntity
 {

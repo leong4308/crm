@@ -2,9 +2,9 @@
 
 namespace Aether\WebForm\DataGrids;
 
+use Aether\DataGrid\DataGrid;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Support\Facades\DB;
-use Aether\DataGrid\DataGrid;
 
 class WebFormDataGrid extends DataGrid
 {

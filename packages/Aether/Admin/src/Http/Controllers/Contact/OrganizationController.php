@@ -2,15 +2,15 @@
 
 namespace Aether\Admin\Http\Controllers\Contact;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
 use Aether\Admin\DataGrids\Contact\OrganizationDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\AttributeForm;
 use Aether\Admin\Http\Requests\MassDestroyRequest;
 use Aether\Contact\Repositories\OrganizationRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
 
 class OrganizationController extends Controller
 {

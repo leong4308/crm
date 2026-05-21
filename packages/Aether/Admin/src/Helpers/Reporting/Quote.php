@@ -2,8 +2,8 @@
 
 namespace Aether\Admin\Helpers\Reporting;
 
-use Carbon\Carbon;
 use Aether\Quote\Repositories\QuoteRepository;
+use Carbon\Carbon;
 
 class Quote extends AbstractReporting
 {

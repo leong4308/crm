@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Activity\ActivityController;
+use Illuminate\Support\Facades\Route;
 
 Route::controller(ActivityController::class)->prefix('activities')->group(function () {
     Route::get('', 'index')->name('admin.activities.index');

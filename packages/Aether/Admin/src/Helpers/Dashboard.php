@@ -2,14 +2,14 @@
 
 namespace Aether\Admin\Helpers;
 
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Collection;
 use Aether\Admin\Helpers\Reporting\Activity;
 use Aether\Admin\Helpers\Reporting\Lead;
 use Aether\Admin\Helpers\Reporting\Organization;
 use Aether\Admin\Helpers\Reporting\Person;
 use Aether\Admin\Helpers\Reporting\Product;
 use Aether\Admin\Helpers\Reporting\Quote;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Collection;
 
 class Dashboard
 {

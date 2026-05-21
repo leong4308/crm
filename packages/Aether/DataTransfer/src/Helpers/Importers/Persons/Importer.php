@@ -2,10 +2,6 @@
 
 namespace Aether\DataTransfer\Helpers\Importers\Persons;
 
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Validator;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Contact\Repositories\PersonRepository;
@@ -13,6 +9,10 @@ use Aether\DataTransfer\Contracts\ImportBatch as ImportBatchContract;
 use Aether\DataTransfer\Helpers\Import;
 use Aether\DataTransfer\Helpers\Importers\AbstractImporter;
 use Aether\DataTransfer\Repositories\ImportBatchRepository;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Validator;
 
 class Importer extends AbstractImporter
 {

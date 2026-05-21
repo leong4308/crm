@@ -2,11 +2,11 @@
 
 namespace Aether\Warehouse\Repositories;
 
-use Illuminate\Container\Container;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Core\Eloquent\Repository;
 use Aether\Warehouse\Contracts\Warehouse;
+use Illuminate\Container\Container;
 
 class WarehouseRepository extends Repository
 {

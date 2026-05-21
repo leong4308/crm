@@ -2,8 +2,8 @@
 
 namespace Aether\Quote\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Quote\Contracts\QuoteItem as QuoteItemContract;
+use Illuminate\Database\Eloquent\Model;
 
 class QuoteItem extends Model implements QuoteItemContract
 {

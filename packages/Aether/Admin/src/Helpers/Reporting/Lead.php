@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Helpers\Reporting;
 
-use Carbon\Carbon;
-use Illuminate\Support\Facades\DB;
 use Aether\Lead\Repositories\LeadRepository;
 use Aether\Lead\Repositories\StageRepository;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class Lead extends AbstractReporting
 {

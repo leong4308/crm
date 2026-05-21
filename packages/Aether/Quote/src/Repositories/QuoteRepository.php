@@ -2,13 +2,13 @@
 
 namespace Aether\Quote\Repositories;
 
-use Illuminate\Container\Container;
-use Illuminate\Support\Str;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Core\Eloquent\Repository;
 use Aether\Lead\Repositories\ProductRepository;
 use Aether\Quote\Contracts\Quote;
+use Illuminate\Container\Container;
+use Illuminate\Support\Str;
 
 class QuoteRepository extends Repository
 {

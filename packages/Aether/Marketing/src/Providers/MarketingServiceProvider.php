@@ -2,9 +2,9 @@
 
 namespace Aether\Marketing\Providers;
 
+use Aether\Marketing\Console\Commands\CampaignCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Support\ServiceProvider;
-use Aether\Marketing\Console\Commands\CampaignCommand;
 
 class MarketingServiceProvider extends ServiceProvider
 {

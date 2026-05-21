@@ -2,9 +2,9 @@
 
 namespace Aether\Core;
 
+use Aether\Core\Acl\AclItem;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Aether\Core\Acl\AclItem;
 
 class Acl
 {

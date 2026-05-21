@@ -2,8 +2,8 @@
 
 namespace Aether\Automation\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Automation\Contracts\Workflow as WorkflowContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Workflow extends Model implements WorkflowContract
 {

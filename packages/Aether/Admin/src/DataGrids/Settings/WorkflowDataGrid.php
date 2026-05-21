@@ -2,9 +2,9 @@
 
 namespace Aether\Admin\DataGrids\Settings;
 
+use Aether\DataGrid\DataGrid;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\DB;
-use Aether\DataGrid\DataGrid;
 
 class WorkflowDataGrid extends DataGrid
 {

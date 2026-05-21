@@ -2,9 +2,6 @@
 
 namespace Aether\Core\Providers;
 
-use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
 use Aether\Core\Acl;
 use Aether\Core\Console\Commands\Version;
 use Aether\Core\Core;
@@ -14,6 +11,9 @@ use Aether\Core\Facades\Menu as MenuFacade;
 use Aether\Core\Facades\SystemConfig as SystemConfigFacade;
 use Aether\Core\Menu;
 use Aether\Core\SystemConfig;
+use Illuminate\Contracts\Container\BindingResolutionException;
+use Illuminate\Foundation\AliasLoader;
+use Illuminate\Support\ServiceProvider;
 
 class CoreServiceProvider extends ServiceProvider
 {

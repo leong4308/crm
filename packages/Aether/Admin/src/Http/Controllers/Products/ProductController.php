@@ -2,17 +2,17 @@
 
 namespace Aether\Admin\Http\Controllers\Products;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Resources\Json\JsonResource;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
-use Prettus\Repository\Criteria\RequestCriteria;
 use Aether\Admin\DataGrids\Product\ProductDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\AttributeForm;
 use Aether\Admin\Http\Requests\MassDestroyRequest;
 use Aether\Admin\Http\Resources\ProductResource;
 use Aether\Product\Repositories\ProductRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
+use Prettus\Repository\Criteria\RequestCriteria;
 
 class ProductController extends Controller
 {

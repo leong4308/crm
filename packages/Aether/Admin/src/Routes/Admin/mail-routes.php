@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Mail\EmailController;
 use Aether\Admin\Http\Controllers\Mail\TagController;
+use Illuminate\Support\Facades\Route;
 
 Route::prefix('mail')->middleware('sanitize_url')->group(function () {
     Route::controller(EmailController::class)->group(function () {

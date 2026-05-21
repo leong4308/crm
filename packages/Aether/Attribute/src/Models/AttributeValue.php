@@ -2,9 +2,9 @@
 
 namespace Aether\Attribute\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Activity\Traits\LogsActivity;
 use Aether\Attribute\Contracts\AttributeValue as AttributeValueContract;
+use Illuminate\Database\Eloquent\Model;
 
 class AttributeValue extends Model implements AttributeValueContract
 {

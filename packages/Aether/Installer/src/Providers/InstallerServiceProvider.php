@@ -2,12 +2,12 @@
 
 namespace Aether\Installer\Providers;
 
-use Illuminate\Routing\Router;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\ServiceProvider;
 use Aether\Installer\Console\Commands\Installer as InstallerCommand;
 use Aether\Installer\Http\Middleware\CanInstall;
 use Aether\Installer\Http\Middleware\Locale;
+use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\ServiceProvider;
 
 class InstallerServiceProvider extends ServiceProvider
 {

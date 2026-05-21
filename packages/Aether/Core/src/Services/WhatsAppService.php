@@ -13,7 +13,9 @@ class WhatsAppService
      * @var string
      */
     protected $baseUrl;
+
     protected $sessionId;
+
     protected $apiKey;
 
     public function __construct()
@@ -31,39 +33,39 @@ class WhatsAppService
 
             // Corregir números de México para WhatsApp (52 + 10 dígitos -> 521 + 10 dígitos)
             if (str_starts_with($phone, '52') && strlen($phone) === 12 && $phone[2] !== '1') {
-                $phone = '521' . substr($phone, 2);
+                $phone = '521'.substr($phone, 2);
             }
 
-            $chatId = $phone . '@c.us';
+            $chatId = $phone.'@c.us';
 
             $response = Http::withHeaders([
                 'X-API-Key' => $this->apiKey,
-                'Content-Type' => 'application/json'
+                'Content-Type' => 'application/json',
             ])->post("{$this->baseUrl}/sessions/{$this->sessionId}/messages/send-text", [
-                'chatId'   => $chatId,
-                'text'     => $message,
+                'chatId' => $chatId,
+                'text' => $message,
             ]);
 
             if ($response->successful()) {
                 return [
                     'success' => true,
-                    'data'    => $response->json(),
+                    'data' => $response->json(),
                 ];
             }
 
-            Log::error('Error enviando WhatsApp: ' . $response->body());
+            Log::error('Error enviando WhatsApp: '.$response->body());
 
             return [
                 'success' => false,
-                'error'   => 'La API devolvió un error: ' . $response->status(),
+                'error' => 'La API devolvió un error: '.$response->status(),
                 'details' => $response->json(),
             ];
         } catch (\Exception $e) {
-            Log::error('Excepción enviando WhatsApp: ' . $e->getMessage());
+            Log::error('Excepción enviando WhatsApp: '.$e->getMessage());
 
             return [
                 'success' => false,
-                'error'   => 'No se pudo conectar a la API de WhatsApp. Asegúrate de que el servidor OpenWA esté corriendo.',
+                'error' => 'No se pudo conectar a la API de WhatsApp. Asegúrate de que el servidor OpenWA esté corriendo.',
             ];
         }
     }
@@ -83,18 +85,18 @@ class WhatsAppService
             if ($response->successful()) {
                 return [
                     'success' => true,
-                    'data'    => $response->json(),
+                    'data' => $response->json(),
                 ];
             }
 
             return [
                 'success' => false,
-                'error'   => 'Error al obtener estado',
+                'error' => 'Error al obtener estado',
             ];
         } catch (\Exception $e) {
             return [
                 'success' => false,
-                'error'   => 'API desconectada',
+                'error' => 'API desconectada',
             ];
         }
     }

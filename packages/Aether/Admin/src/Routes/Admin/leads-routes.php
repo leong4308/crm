@@ -1,12 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Lead\ActivityController;
 use Aether\Admin\Http\Controllers\Lead\EmailController;
 use Aether\Admin\Http\Controllers\Lead\LeadController;
 use Aether\Admin\Http\Controllers\Lead\QuoteController;
 use Aether\Admin\Http\Controllers\Lead\TagController;
 use Aether\Admin\Http\Controllers\WhatsAppController;
+use Illuminate\Support\Facades\Route;
 
 Route::controller(LeadController::class)->prefix('leads')->group(function () {
     Route::get('', 'index')->name('admin.leads.index');

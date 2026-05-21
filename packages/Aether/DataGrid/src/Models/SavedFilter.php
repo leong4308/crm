@@ -2,9 +2,9 @@
 
 namespace Aether\DataGrid\Models;
 
+use Aether\DataGrid\Contracts\SavedFilter as SavedFilterContract;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Aether\DataGrid\Contracts\SavedFilter as SavedFilterContract;
 
 class SavedFilter extends Model implements SavedFilterContract
 {

@@ -2,15 +2,15 @@
 
 namespace Aether\Admin\Http\Controllers\Configuration;
 
+use Aether\Admin\Http\Controllers\Controller;
+use Aether\Admin\Http\Requests\ConfigurationForm;
+use Aether\Core\Repositories\CoreConfigRepository as ConfigurationRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
-use Aether\Admin\Http\Controllers\Controller;
-use Aether\Admin\Http\Requests\ConfigurationForm;
-use Aether\Core\Repositories\CoreConfigRepository as ConfigurationRepository;
 
 class ConfigurationController extends Controller
 {

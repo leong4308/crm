@@ -2,14 +2,14 @@
 
 namespace Aether\Email\InboundEmailProcessor;
 
-use Carbon\Carbon;
-use Webklex\IMAP\Facades\Client;
-use Webklex\IMAP\Support\FolderCollection;
-use Webklex\PHPIMAP\Message;
 use Aether\Email\Enums\SupportedFolderEnum;
 use Aether\Email\InboundEmailProcessor\Contracts\InboundEmailProcessor;
 use Aether\Email\Repositories\AttachmentRepository;
 use Aether\Email\Repositories\EmailRepository;
+use Carbon\Carbon;
+use Webklex\IMAP\Facades\Client;
+use Webklex\IMAP\Support\FolderCollection;
+use Webklex\PHPIMAP\Message;
 
 class WebklexImapEmailProcessor implements InboundEmailProcessor
 {

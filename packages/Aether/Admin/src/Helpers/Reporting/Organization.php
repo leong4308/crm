@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Helpers\Reporting;
 
+use Aether\Contact\Repositories\OrganizationRepository;
 use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
-use Aether\Contact\Repositories\OrganizationRepository;
 
 class Organization extends AbstractReporting
 {

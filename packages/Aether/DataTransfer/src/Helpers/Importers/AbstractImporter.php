@@ -2,8 +2,6 @@
 
 namespace Aether\DataTransfer\Helpers\Importers;
 
-use Illuminate\Support\Facades\Bus;
-use Illuminate\Support\Facades\Event;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Core\Contracts\Validations\Decimal;
@@ -19,6 +17,8 @@ use Aether\DataTransfer\Jobs\Import\Indexing as IndexingJob;
 use Aether\DataTransfer\Jobs\Import\LinkBatch as LinkBatchJob;
 use Aether\DataTransfer\Jobs\Import\Linking as LinkingJob;
 use Aether\DataTransfer\Repositories\ImportBatchRepository;
+use Illuminate\Support\Facades\Bus;
+use Illuminate\Support\Facades\Event;
 
 abstract class AbstractImporter
 {

@@ -2,13 +2,13 @@
 
 namespace Aether\Admin\Http\Controllers\Contact\Persons;
 
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB;
 use Aether\Activity\Repositories\ActivityRepository;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Resources\ActivityResource;
 use Aether\Email\Repositories\AttachmentRepository;
 use Aether\Email\Repositories\EmailRepository;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
 
 class ActivityController extends Controller
 {

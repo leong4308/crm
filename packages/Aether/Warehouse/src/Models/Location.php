@@ -2,8 +2,8 @@
 
 namespace Aether\Warehouse\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Warehouse\Contracts\Location as LocationContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Location extends Model implements LocationContract
 {

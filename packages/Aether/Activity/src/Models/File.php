@@ -2,9 +2,9 @@
 
 namespace Aether\Activity\Models;
 
+use Aether\Activity\Contracts\File as FileContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
-use Aether\Activity\Contracts\File as FileContract;
 
 class File extends Model implements FileContract
 {

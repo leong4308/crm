@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\DataGrids\Settings;
 
+use Aether\DataGrid\DataGrid;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
-use Aether\DataGrid\DataGrid;
 
 class UserDataGrid extends DataGrid
 {

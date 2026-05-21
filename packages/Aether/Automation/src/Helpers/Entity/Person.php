@@ -2,16 +2,15 @@
 
 namespace Aether\Automation\Helpers\Entity;
 
-use Illuminate\Support\Facades\Mail;
 use Aether\Admin\Notifications\Common;
 use Aether\Attribute\Repositories\AttributeRepository;
-use Aether\Automation\Contracts\Workflow;
 use Aether\Automation\Repositories\WebhookRepository;
 use Aether\Automation\Services\WebhookService;
 use Aether\Contact\Contracts\Person as PersonContract;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\EmailTemplate\Repositories\EmailTemplateRepository;
 use Aether\Lead\Repositories\LeadRepository;
+use Illuminate\Support\Facades\Mail;
 
 class Person extends AbstractEntity
 {

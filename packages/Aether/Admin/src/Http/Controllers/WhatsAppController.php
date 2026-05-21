@@ -2,9 +2,9 @@
 
 namespace Aether\Admin\Http\Controllers;
 
-use Illuminate\Http\JsonResponse;
 use Aether\Core\Services\WhatsAppService;
 use Aether\Lead\Repositories\LeadRepository;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class WhatsAppController extends Controller

@@ -2,9 +2,9 @@
 
 namespace Aether\Lead\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Lead\Contracts\Product as ProductContract;
 use Aether\Product\Models\ProductProxy;
+use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model implements ProductContract
 {

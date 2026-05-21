@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Controllers\User\ForgotPasswordController;
 use Aether\Admin\Http\Controllers\User\ResetPasswordController;
 use Aether\Admin\Http\Controllers\User\SessionController;
+use Illuminate\Support\Facades\Route;
 
 Route::withoutMiddleware(['user'])->group(function () {
     /**

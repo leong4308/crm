@@ -2,12 +2,12 @@
 
 namespace Aether\Admin\DataGrids\Mail;
 
-use Carbon\Carbon;
-use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\DB;
 use Aether\DataGrid\DataGrid;
 use Aether\Email\Repositories\EmailRepository;
 use Aether\Tag\Repositories\TagRepository;
+use Carbon\Carbon;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\DB;
 
 class EmailDataGrid extends DataGrid
 {

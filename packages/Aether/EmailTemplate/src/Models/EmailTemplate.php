@@ -2,8 +2,8 @@
 
 namespace Aether\EmailTemplate\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\EmailTemplate\Contracts\EmailTemplate as EmailTemplateContract;
+use Illuminate\Database\Eloquent\Model;
 
 class EmailTemplate extends Model implements EmailTemplateContract
 {

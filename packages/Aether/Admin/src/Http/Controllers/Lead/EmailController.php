@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Http\Controllers\Lead;
 
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Event;
 use Aether\Admin\Http\Controllers\Mail\EmailController as BaseEmailController;
 use Aether\Admin\Http\Resources\ActivityResource;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Event;
 
 class EmailController extends BaseEmailController
 {

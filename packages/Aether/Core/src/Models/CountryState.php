@@ -2,8 +2,8 @@
 
 namespace Aether\Core\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Core\Contracts\CountryState as CountryStateContract;
+use Illuminate\Database\Eloquent\Model;
 
 class CountryState extends Model implements CountryStateContract
 {

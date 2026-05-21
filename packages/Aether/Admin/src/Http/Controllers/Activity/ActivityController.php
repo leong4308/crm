@@ -2,13 +2,6 @@
 
 namespace Aether\Admin\Http\Controllers\Activity;
 
-use Carbon\Carbon;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\View\View;
-use Symfony\Component\HttpFoundation\RedirectResponse;
-use Symfony\Component\HttpFoundation\StreamedResponse;
 use Aether\Activity\Repositories\ActivityRepository;
 use Aether\Activity\Repositories\FileRepository;
 use Aether\Admin\DataGrids\Activity\ActivityDataGrid;
@@ -17,6 +10,13 @@ use Aether\Admin\Http\Requests\MassDestroyRequest;
 use Aether\Admin\Http\Requests\MassUpdateRequest;
 use Aether\Admin\Http\Resources\ActivityResource;
 use Aether\Attribute\Repositories\AttributeRepository;
+use Carbon\Carbon;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\View\View;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class ActivityController extends Controller
 {

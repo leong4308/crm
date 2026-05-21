@@ -2,19 +2,17 @@
 
 namespace Aether\Admin\Http\Controllers\Contact\Persons;
 
-use Exception;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Resources\Json\JsonResource;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
-use Prettus\Repository\Criteria\RequestCriteria;
 use Aether\Admin\DataGrids\Contact\PersonDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\AttributeForm;
 use Aether\Admin\Http\Requests\MassDestroyRequest;
-use Aether\Admin\Http\Resources\PersonResource;
 use Aether\Contact\Repositories\PersonRepository;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
 
 class PersonController extends Controller
 {
@@ -121,7 +119,7 @@ class PersonController extends Controller
     {
         $query = request()->input('query', '');
 
-        $queryBuilder = \Illuminate\Support\Facades\DB::table('persons')
+        $queryBuilder = DB::table('persons')
             ->select(
                 'persons.id',
                 'persons.name',
@@ -129,7 +127,7 @@ class PersonController extends Controller
                 'persons.contact_numbers',
                 'persons.organization_id'
             )
-            ->where('persons.name', 'ilike', '%' . $query . '%')
+            ->where('persons.name', 'ilike', '%'.$query.'%')
             ->orderBy('persons.name')
             ->limit(50);
 
@@ -139,11 +137,11 @@ class PersonController extends Controller
 
         $persons = $queryBuilder->get()->map(function ($row) {
             return [
-                'id'              => $row->id,
-                'name'            => $row->name,
-                'emails'          => json_decode($row->emails, true) ?? [],
+                'id' => $row->id,
+                'name' => $row->name,
+                'emails' => json_decode($row->emails, true) ?? [],
                 'contact_numbers' => json_decode($row->contact_numbers, true) ?? [],
-                'organization'    => null,
+                'organization' => null,
             ];
         });
 

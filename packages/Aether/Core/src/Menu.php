@@ -2,9 +2,9 @@
 
 namespace Aether\Core;
 
+use Aether\Core\Menu\MenuItem;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Aether\Core\Menu\MenuItem;
 
 class Menu
 {

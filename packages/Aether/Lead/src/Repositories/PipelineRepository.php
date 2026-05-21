@@ -2,10 +2,10 @@
 
 namespace Aether\Lead\Repositories;
 
-use Illuminate\Container\Container;
-use Illuminate\Support\Str;
 use Aether\Core\Eloquent\Repository;
 use Aether\Lead\Contracts\Pipeline;
+use Illuminate\Container\Container;
+use Illuminate\Support\Str;
 
 class PipelineRepository extends Repository
 {

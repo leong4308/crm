@@ -2,12 +2,12 @@
 
 namespace Aether\Admin\Http\Controllers\User;
 
+use Aether\Admin\Http\Controllers\Controller;
+use Aether\Admin\Notifications\User\UserResetPassword;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Password;
-use Aether\Admin\Http\Controllers\Controller;
-use Aether\Admin\Notifications\User\UserResetPassword;
 
 class ForgotPasswordController extends Controller
 {

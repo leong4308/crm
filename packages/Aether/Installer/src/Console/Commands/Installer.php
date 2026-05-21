@@ -2,13 +2,13 @@
 
 namespace Aether\Installer\Console\Commands;
 
+use Aether\Core\Providers\CoreServiceProvider;
+use Aether\Installer\Database\Seeders\DatabaseSeeder as CRMV1DatabaseSeeder;
+use Aether\Installer\Events\ComposerEvents;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
-use Aether\Core\Providers\CoreServiceProvider;
-use Aether\Installer\Database\Seeders\DatabaseSeeder as CRMV1DatabaseSeeder;
-use Aether\Installer\Events\ComposerEvents;
 
 use function Laravel\Prompts\password;
 use function Laravel\Prompts\select;

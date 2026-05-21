@@ -2,8 +2,8 @@
 
 namespace Aether\Contact\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Aether\Contact\Models\Person;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PersonFactory extends Factory
 {

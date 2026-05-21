@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Http\Controllers\Contact\Persons;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Event;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Contact\Repositories\PersonRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Event;
 
 class TagController extends Controller
 {

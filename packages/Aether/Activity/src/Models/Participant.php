@@ -2,10 +2,10 @@
 
 namespace Aether\Activity\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Activity\Contracts\Participant as ParticipantContract;
 use Aether\Contact\Models\PersonProxy;
 use Aether\User\Models\UserProxy;
+use Illuminate\Database\Eloquent\Model;
 
 class Participant extends Model implements ParticipantContract
 {

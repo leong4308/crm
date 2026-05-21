@@ -2,9 +2,6 @@
 
 namespace Aether\DataTransfer\Helpers\Importers\Leads;
 
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Validator;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Core\Contracts\Validations\Decimal;
@@ -14,6 +11,9 @@ use Aether\DataTransfer\Helpers\Importers\AbstractImporter;
 use Aether\DataTransfer\Repositories\ImportBatchRepository;
 use Aether\Lead\Repositories\LeadRepository;
 use Aether\Lead\Repositories\ProductRepository as LeadProductRepository;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Validator;
 
 class Importer extends AbstractImporter
 {

@@ -2,11 +2,11 @@
 
 namespace Aether\Contact\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Aether\Attribute\Traits\CustomAttribute;
 use Aether\Contact\Contracts\Organization as OrganizationContract;
 use Aether\User\Models\UserProxy;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Organization extends Model implements OrganizationContract
 {

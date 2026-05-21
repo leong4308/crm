@@ -2,14 +2,14 @@
 
 namespace Aether\Admin\Http\Controllers\Settings;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
 use Aether\Admin\DataGrids\Settings\PipelineDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\PipelineForm;
 use Aether\Lead\Repositories\PipelineRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
 
 class PipelineController extends Controller
 {

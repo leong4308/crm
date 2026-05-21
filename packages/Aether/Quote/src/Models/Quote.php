@@ -2,12 +2,12 @@
 
 namespace Aether\Quote\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Attribute\Traits\CustomAttribute;
 use Aether\Contact\Models\PersonProxy;
 use Aether\Lead\Models\LeadProxy;
 use Aether\Quote\Contracts\Quote as QuoteContract;
 use Aether\User\Models\UserProxy;
+use Illuminate\Database\Eloquent\Model;
 
 class Quote extends Model implements QuoteContract
 {

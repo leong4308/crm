@@ -2,8 +2,8 @@
 
 namespace Aether\User\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\User\Contracts\Role as RoleContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model implements RoleContract
 {

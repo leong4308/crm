@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Notifications\User;
 
+use Aether\User\Contracts\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Aether\User\Contracts\User;
 
 class UserUpdatePassword extends Mailable
 {

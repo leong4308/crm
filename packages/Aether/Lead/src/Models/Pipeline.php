@@ -2,8 +2,8 @@
 
 namespace Aether\Lead\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Lead\Contracts\Pipeline as PipelineContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Pipeline extends Model implements PipelineContract
 {

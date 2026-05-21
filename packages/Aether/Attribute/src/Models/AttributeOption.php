@@ -2,8 +2,8 @@
 
 namespace Aether\Attribute\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Attribute\Contracts\AttributeOption as AttributeOptionContract;
+use Illuminate\Database\Eloquent\Model;
 
 class AttributeOption extends Model implements AttributeOptionContract
 {

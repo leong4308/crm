@@ -38,9 +38,9 @@ return [
     ],
 
     'persons' => [
-        'name'       => 'Persons',
+        'name' => 'Persons',
         'repository' => 'Aether\Contact\Repositories\PersonRepository',
-        'table'      => 'persons',
+        'table' => 'persons',
     ],
 
     'warehouses' => [

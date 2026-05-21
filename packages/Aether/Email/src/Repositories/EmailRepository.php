@@ -2,9 +2,9 @@
 
 namespace Aether\Email\Repositories;
 
-use Illuminate\Container\Container;
 use Aether\Core\Eloquent\Repository;
 use Aether\Email\Contracts\Email;
+use Illuminate\Container\Container;
 
 class EmailRepository extends Repository
 {
@@ -32,7 +32,7 @@ class EmailRepository extends Repository
      */
     public function create(array $data)
     {
-        $uniqueId = time() . '_' . uniqid() . '@' . config('mail.domain');
+        $uniqueId = time().'_'.uniqid().'@'.config('mail.domain');
 
         $referenceIds = [];
 

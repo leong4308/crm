@@ -2,6 +2,8 @@
 
 namespace Aether\DataGrid;
 
+use Aether\DataGrid\Enums\ColumnTypeEnum;
+use Aether\DataGrid\Exports\DataGridExport;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -10,8 +12,6 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
-use Aether\DataGrid\Enums\ColumnTypeEnum;
-use Aether\DataGrid\Exports\DataGridExport;
 
 abstract class DataGrid
 {

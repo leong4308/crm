@@ -2,11 +2,11 @@
 
 namespace Aether\Admin\Http\Controllers\Settings;
 
+use Aether\Admin\Http\Controllers\Controller;
+use Aether\Core\Menu\MenuItem;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;
 use Illuminate\View\View;
-use Aether\Admin\Http\Controllers\Controller;
-use Aether\Core\Menu\MenuItem;
 
 class SettingController extends Controller
 {

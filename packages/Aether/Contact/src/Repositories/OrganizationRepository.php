@@ -2,12 +2,12 @@
 
 namespace Aether\Contact\Repositories;
 
-use Illuminate\Container\Container;
-use Illuminate\Support\Facades\DB;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Contact\Contracts\Organization;
 use Aether\Core\Eloquent\Repository;
+use Illuminate\Container\Container;
+use Illuminate\Support\Facades\DB;
 
 class OrganizationRepository extends Repository
 {

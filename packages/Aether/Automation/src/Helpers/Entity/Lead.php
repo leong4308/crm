@@ -2,7 +2,6 @@
 
 namespace Aether\Automation\Helpers\Entity;
 
-use Illuminate\Support\Facades\Mail;
 use Aether\Activity\Repositories\ActivityRepository;
 use Aether\Admin\Notifications\Common;
 use Aether\Attribute\Repositories\AttributeRepository;
@@ -13,6 +12,7 @@ use Aether\EmailTemplate\Repositories\EmailTemplateRepository;
 use Aether\Lead\Contracts\Lead as ContractsLead;
 use Aether\Lead\Repositories\LeadRepository;
 use Aether\Tag\Repositories\TagRepository;
+use Illuminate\Support\Facades\Mail;
 
 class Lead extends AbstractEntity
 {

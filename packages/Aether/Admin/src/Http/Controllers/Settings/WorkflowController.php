@@ -2,13 +2,13 @@
 
 namespace Aether\Admin\Http\Controllers\Settings;
 
+use Aether\Admin\DataGrids\Settings\WorkflowDataGrid;
+use Aether\Admin\Http\Controllers\Controller;
+use Aether\Automation\Repositories\WorkflowRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
 use Illuminate\View\View;
-use Aether\Admin\DataGrids\Settings\WorkflowDataGrid;
-use Aether\Admin\Http\Controllers\Controller;
-use Aether\Automation\Repositories\WorkflowRepository;
 
 class WorkflowController extends Controller
 {

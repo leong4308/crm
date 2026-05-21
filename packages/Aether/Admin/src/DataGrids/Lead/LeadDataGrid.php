@@ -2,8 +2,6 @@
 
 namespace Aether\Admin\DataGrids\Lead;
 
-use Illuminate\Contracts\Database\Query\Builder;
-use Illuminate\Support\Facades\DB;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\Contract\Repositories\Pipeline;
 use Aether\DataGrid\DataGrid;
@@ -13,6 +11,8 @@ use Aether\Lead\Repositories\StageRepository;
 use Aether\Lead\Repositories\TypeRepository;
 use Aether\Tag\Repositories\TagRepository;
 use Aether\User\Repositories\UserRepository;
+use Illuminate\Contracts\Database\Query\Builder;
+use Illuminate\Support\Facades\DB;
 
 class LeadDataGrid extends DataGrid
 {

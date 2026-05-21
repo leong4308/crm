@@ -2,9 +2,9 @@
 
 namespace Aether\Automation\Providers;
 
+use Aether\Automation\Listeners\Entity;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Aether\Automation\Listeners\Entity;
 
 class WorkflowServiceProvider extends ServiceProvider
 {

@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\DataGrids\Contact;
 
-use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\DB;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\DataGrid\DataGrid;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\DB;
 
 class OrganizationDataGrid extends DataGrid
 {

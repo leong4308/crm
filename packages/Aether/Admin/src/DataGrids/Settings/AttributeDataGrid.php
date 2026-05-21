@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\DataGrids\Settings;
 
-use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\DB;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\DataGrid\DataGrid;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\DB;
 
 class AttributeDataGrid extends DataGrid
 {

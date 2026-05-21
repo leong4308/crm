@@ -2,10 +2,6 @@
 
 namespace Aether\DataTransfer\Helpers\Importers\Products;
 
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Validator;
 use Aether\Attribute\Repositories\AttributeOptionRepository;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
@@ -15,6 +11,10 @@ use Aether\DataTransfer\Helpers\Importers\AbstractImporter;
 use Aether\DataTransfer\Repositories\ImportBatchRepository;
 use Aether\Product\Repositories\ProductInventoryRepository;
 use Aether\Product\Repositories\ProductRepository;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Validator;
 
 class Importer extends AbstractImporter
 {

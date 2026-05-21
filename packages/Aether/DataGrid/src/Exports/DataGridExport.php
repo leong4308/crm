@@ -2,11 +2,11 @@
 
 namespace Aether\DataGrid\Exports;
 
+use Aether\DataGrid\DataGrid;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;
-use Aether\DataGrid\DataGrid;
 
 class DataGridExport implements FromQuery, ShouldAutoSize, WithHeadings, WithMapping
 {

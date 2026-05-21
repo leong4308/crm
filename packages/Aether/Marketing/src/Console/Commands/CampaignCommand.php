@@ -2,8 +2,8 @@
 
 namespace Aether\Marketing\Console\Commands;
 
-use Illuminate\Console\Command;
 use Aether\Marketing\Helpers\Campaign;
+use Illuminate\Console\Command;
 
 class CampaignCommand extends Command
 {

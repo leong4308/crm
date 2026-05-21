@@ -2,12 +2,12 @@
 
 namespace Aether\Marketing\Helpers;
 
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Mail;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\Marketing\Mail\CampaignMail;
 use Aether\Marketing\Repositories\CampaignRepository;
 use Aether\Marketing\Repositories\EventRepository;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
 
 class Campaign
 {

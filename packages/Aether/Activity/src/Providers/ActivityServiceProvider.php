@@ -2,14 +2,14 @@
 
 namespace Aether\Activity\Providers;
 
-use Illuminate\Routing\Router;
-use Illuminate\Support\ServiceProvider;
 use Aether\Activity\Contracts\Activity as ActivityContract;
 use Aether\Activity\Contracts\File as FileContract;
 use Aether\Activity\Contracts\Participant as ParticipantContract;
 use Aether\Activity\Models\Activity;
 use Aether\Activity\Models\File;
 use Aether\Activity\Models\Participant;
+use Illuminate\Routing\Router;
+use Illuminate\Support\ServiceProvider;
 
 class ActivityServiceProvider extends ServiceProvider
 {

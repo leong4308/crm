@@ -2,9 +2,9 @@
 
 namespace Aether\DataTransfer\Models;
 
+use Aether\DataTransfer\Contracts\Import as ImportContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Aether\DataTransfer\Contracts\Import as ImportContract;
 
 class Import extends Model implements ImportContract
 {

@@ -2,11 +2,11 @@
 
 namespace Aether\Contact\Repositories;
 
-use Illuminate\Container\Container;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Contact\Contracts\Person;
 use Aether\Core\Eloquent\Repository;
+use Illuminate\Container\Container;
 
 class PersonRepository extends Repository
 {

@@ -2,9 +2,9 @@
 
 namespace Aether\DataTransfer\Models;
 
+use Aether\DataTransfer\Contracts\ImportBatch as ImportBatchContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Aether\DataTransfer\Contracts\ImportBatch as ImportBatchContract;
 
 class ImportBatch extends Model implements ImportBatchContract
 {

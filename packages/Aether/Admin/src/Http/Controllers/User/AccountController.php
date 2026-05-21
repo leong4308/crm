@@ -2,12 +2,12 @@
 
 namespace Aether\Admin\Http\Controllers\User;
 
+use Aether\Admin\Http\Controllers\Controller;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
-use Aether\Admin\Http\Controllers\Controller;
 
 class AccountController extends Controller
 {

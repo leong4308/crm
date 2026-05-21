@@ -2,8 +2,8 @@
 
 namespace Aether\User\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\User\Contracts\Group as GroupContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Group extends Model implements GroupContract
 {

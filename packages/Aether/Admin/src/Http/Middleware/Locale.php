@@ -9,12 +9,12 @@ use Illuminate\Http\Request;
 class Locale
 {
     /**
-     * @var \Illuminate\Foundation\Application
+     * @var Application
      */
     protected $app;
 
     /**
-     * @var \Illuminate\Http\Request
+     * @var Request
      */
     protected $request;
 

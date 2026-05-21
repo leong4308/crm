@@ -2,9 +2,6 @@
 
 namespace Aether\Product\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Aether\Activity\Models\ActivityProxy;
 use Aether\Activity\Traits\LogsActivity;
 use Aether\Attribute\Traits\CustomAttribute;
@@ -12,6 +9,9 @@ use Aether\Product\Contracts\Product as ProductContract;
 use Aether\Tag\Models\TagProxy;
 use Aether\Warehouse\Models\LocationProxy;
 use Aether\Warehouse\Models\WarehouseProxy;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Product extends Model implements ProductContract
 {

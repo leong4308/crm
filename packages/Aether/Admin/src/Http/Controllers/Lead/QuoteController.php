@@ -2,16 +2,16 @@
 
 namespace Aether\Admin\Http\Controllers\Lead;
 
+use Aether\Admin\Http\Controllers\Controller;
+use Aether\Admin\Notifications\Common;
+use Aether\Lead\Repositories\LeadRepository;
+use Aether\Quote\Repositories\QuoteRepository;
 use ArPHP\I18N\Arabic;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Mail;
 use Mpdf\Mpdf;
-use Aether\Admin\Http\Controllers\Controller;
-use Aether\Admin\Notifications\Common;
-use Aether\Lead\Repositories\LeadRepository;
-use Aether\Quote\Repositories\QuoteRepository;
 
 class QuoteController extends Controller
 {

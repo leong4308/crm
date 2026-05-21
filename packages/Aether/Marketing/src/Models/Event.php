@@ -2,8 +2,8 @@
 
 namespace Aether\Marketing\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Marketing\Contracts\Event as EventContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model implements EventContract
 {

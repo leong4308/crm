@@ -2,11 +2,11 @@
 
 namespace Aether\Marketing\Mail;
 
+use Aether\Marketing\Contracts\Campaign;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
-use Aether\Marketing\Contracts\Campaign;
 
 class CampaignMail extends Mailable
 {

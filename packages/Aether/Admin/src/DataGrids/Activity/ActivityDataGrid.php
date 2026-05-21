@@ -2,12 +2,12 @@
 
 namespace Aether\Admin\DataGrids\Activity;
 
-use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\DB;
 use Aether\Admin\Traits\ProvideDropdownOptions;
 use Aether\DataGrid\DataGrid;
 use Aether\Lead\Repositories\LeadRepository;
 use Aether\User\Repositories\UserRepository;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\DB;
 
 class ActivityDataGrid extends DataGrid
 {

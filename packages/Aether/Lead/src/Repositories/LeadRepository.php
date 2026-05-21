@@ -2,16 +2,16 @@
 
 namespace Aether\Lead\Repositories;
 
-use Carbon\Carbon;
-use Illuminate\Container\Container;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\Core\Eloquent\Repository;
 use Aether\Lead\Contracts\Lead;
+use Carbon\Carbon;
+use Illuminate\Container\Container;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class LeadRepository extends Repository
 {

@@ -2,14 +2,14 @@
 
 namespace Aether\Admin\Http\Controllers\Settings;
 
+use Aether\Admin\DataGrids\Settings\GroupDataGrid;
+use Aether\Admin\Http\Controllers\Controller;
+use Aether\User\Repositories\GroupRepository;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Event;
 use Illuminate\View\View;
-use Aether\Admin\DataGrids\Settings\GroupDataGrid;
-use Aether\Admin\Http\Controllers\Controller;
-use Aether\User\Repositories\GroupRepository;
 
 class GroupController extends Controller
 {

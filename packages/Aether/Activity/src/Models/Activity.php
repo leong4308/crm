@@ -2,13 +2,13 @@
 
 namespace Aether\Activity\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Activity\Contracts\Activity as ActivityContract;
 use Aether\Contact\Models\PersonProxy;
 use Aether\Lead\Models\LeadProxy;
 use Aether\Product\Models\ProductProxy;
 use Aether\User\Models\UserProxy;
 use Aether\Warehouse\Models\WarehouseProxy;
+use Illuminate\Database\Eloquent\Model;
 
 class Activity extends Model implements ActivityContract
 {

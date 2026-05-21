@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Http\Middleware;
 
+use Aether\Email\Enums\SupportedFolderEnum;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Aether\Email\Enums\SupportedFolderEnum;
 
 class SanitizeUrl
 {

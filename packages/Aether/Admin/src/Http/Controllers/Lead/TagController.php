@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\Http\Controllers\Lead;
 
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Event;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Lead\Repositories\LeadRepository;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Event;
 
 class TagController extends Controller
 {

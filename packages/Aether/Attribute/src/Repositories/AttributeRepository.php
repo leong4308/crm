@@ -2,11 +2,12 @@
 
 namespace Aether\Attribute\Repositories;
 
-use Illuminate\Container\Container;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
 use Aether\Attribute\Contracts\Attribute;
 use Aether\Core\Eloquent\Repository;
+use Illuminate\Container\Container;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class AttributeRepository extends Repository
 {
@@ -47,7 +48,7 @@ class AttributeRepository extends Repository
             foreach ($options as $optionInputs) {
                 $this->attributeOptionRepository->create(array_merge([
                     'attribute_id' => $attribute->id,
-                    'sort_order'   => $sortOrder++,
+                    'sort_order' => $sortOrder++,
                 ], $optionInputs));
             }
         }
@@ -113,7 +114,7 @@ class AttributeRepository extends Repository
     /**
      * @param  string  $lookup
      * @param  string  $query
-     * @param  array   $columns
+     * @param  array  $columns
      * @return mixed
      */
     public function getLookUpOptions($lookup, $query = '', $columns = [])
@@ -133,7 +134,7 @@ class AttributeRepository extends Repository
             $currentUser = auth()->guard('user')->user();
 
             if ($currentUser?->view_permission === 'group') {
-                $query   = urldecode($query);
+                $query = urldecode($query);
                 $userIds = bouncer()->getAuthorizedUserIds();
 
                 return $userRepository
@@ -164,12 +165,12 @@ class AttributeRepository extends Repository
      * Se usa para entidades con el CustomAttribute trait donde el campo 'name'
      * puede ser sobreescrito desde attribute_values, dejándolo vacío.
      */
-    protected function getLookUpOptionsDirectQuery(array $lookup, ?string $query): \Illuminate\Support\Collection
+    protected function getLookUpOptionsDirectQuery(array $lookup, ?string $query): Collection
     {
-        $table       = $lookup['table'];
+        $table = $lookup['table'];
         $labelColumn = $lookup['label_column'] ?? 'name';
         $valueColumn = $lookup['value_column'] ?? 'id';
-        $search      = '%' . urldecode($query ?? '') . '%';
+        $search = '%'.urldecode($query ?? '').'%';
 
         return DB::table($table)
             ->select("{$valueColumn} as id", "{$labelColumn} as name")
@@ -180,9 +181,9 @@ class AttributeRepository extends Repository
     }
 
     /**
-     * @param  string       $lookup
-     * @param  int|array    $entityId
-     * @param  array        $columns
+     * @param  string  $lookup
+     * @param  int|array  $entityId
+     * @param  array  $columns
      * @return mixed
      */
     public function getLookUpEntity($lookup, $entityId = null, $columns = [])
@@ -203,7 +204,7 @@ class AttributeRepository extends Repository
         // Usar consulta directa cuando está definida la 'table' para evitar
         // el override del CustomAttribute trait en el campo 'name'.
         if (! empty($lookup['table'])) {
-            $table       = $lookup['table'];
+            $table = $lookup['table'];
             $labelColumn = $lookup['label_column'] ?? 'name';
             $valueColumn = $lookup['value_column'] ?? 'id';
 

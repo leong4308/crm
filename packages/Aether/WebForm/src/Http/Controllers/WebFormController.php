@@ -2,10 +2,6 @@
 
 namespace Aether\WebForm\Http\Controllers;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Contact\Repositories\PersonRepository;
 use Aether\Lead\Repositories\LeadRepository;
@@ -14,6 +10,10 @@ use Aether\Lead\Repositories\SourceRepository;
 use Aether\Lead\Repositories\TypeRepository;
 use Aether\WebForm\Http\Requests\WebForm;
 use Aether\WebForm\Repositories\WebFormRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
 
 class WebFormController extends Controller
 {

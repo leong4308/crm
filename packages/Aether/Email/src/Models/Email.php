@@ -2,11 +2,11 @@
 
 namespace Aether\Email\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Contact\Models\PersonProxy;
 use Aether\Email\Contracts\Email as EmailContract;
 use Aether\Lead\Models\LeadProxy;
 use Aether\Tag\Models\TagProxy;
+use Illuminate\Database\Eloquent\Model;
 
 class Email extends Model implements EmailContract
 {

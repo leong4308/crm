@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Quote\QuoteController;
+use Illuminate\Support\Facades\Route;
 
 Route::controller(QuoteController::class)->prefix('quotes')->group(function () {
     Route::get('', 'index')->name('admin.quotes.index');

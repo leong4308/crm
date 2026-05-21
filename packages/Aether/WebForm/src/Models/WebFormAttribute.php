@@ -2,9 +2,9 @@
 
 namespace Aether\WebForm\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Attribute\Models\AttributeProxy;
 use Aether\WebForm\Contracts\WebFormAttribute as WebFormAttributeContract;
+use Illuminate\Database\Eloquent\Model;
 
 class WebFormAttribute extends Model implements WebFormAttributeContract
 {

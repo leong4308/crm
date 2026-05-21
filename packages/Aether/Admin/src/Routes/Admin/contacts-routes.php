@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Contact\OrganizationController;
 use Aether\Admin\Http\Controllers\Contact\Persons\ActivityController;
 use Aether\Admin\Http\Controllers\Contact\Persons\PersonController;
 use Aether\Admin\Http\Controllers\Contact\Persons\TagController;
+use Illuminate\Support\Facades\Route;
 
 Route::prefix('contacts')->group(function () {
     /**

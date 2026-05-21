@@ -2,16 +2,16 @@
 
 namespace Aether\Admin\Http\Controllers\Settings;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
-use Prettus\Repository\Criteria\RequestCriteria;
 use Aether\Admin\DataGrids\Settings\TagDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\MassDestroyRequest;
 use Aether\Admin\Http\Resources\TagResource;
 use Aether\Tag\Repositories\TagRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
+use Prettus\Repository\Criteria\RequestCriteria;
 
 class TagController extends Controller
 {

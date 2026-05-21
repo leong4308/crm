@@ -22,9 +22,9 @@ return new class extends Migration
             $contactNumbers = json_decode($person->contact_numbers, true);
             $email = $emails[0]['value'] ?? '';
             $contact = $contactNumbers[0]['value'] ?? '';
-            
+
             DB::table('persons')->where('id', $person->id)->update([
-                'unique_id' => $person->user_id . '|' . $person->organization_id . '|' . $email . '|' . $contact
+                'unique_id' => $person->user_id.'|'.$person->organization_id.'|'.$email.'|'.$contact,
             ]);
         }
     }

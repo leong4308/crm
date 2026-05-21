@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\Configuration\ConfigurationController;
+use Illuminate\Support\Facades\Route;
 
 Route::controller(ConfigurationController::class)->prefix('configuration')->group(function () {
     Route::get('search', 'search')->name('admin.configuration.search');

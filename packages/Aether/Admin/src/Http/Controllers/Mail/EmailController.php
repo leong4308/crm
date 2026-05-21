@@ -2,14 +2,6 @@
 
 namespace Aether\Admin\Http\Controllers\Mail;
 
-use Exception;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\View\View;
 use Aether\Admin\DataGrids\Mail\EmailDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\MassDestroyRequest;
@@ -21,6 +13,14 @@ use Aether\Email\Mails\Email;
 use Aether\Email\Repositories\AttachmentRepository;
 use Aether\Email\Repositories\EmailRepository;
 use Aether\Lead\Repositories\LeadRepository;
+use Exception;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\View\View;
 
 class EmailController extends Controller
 {

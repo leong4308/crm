@@ -2,12 +2,12 @@
 
 namespace Aether\DataTransfer\Jobs\Import;
 
+use Aether\DataTransfer\Helpers\Import as ImportHelper;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Aether\DataTransfer\Helpers\Import as ImportHelper;
 
 class Completed implements ShouldQueue
 {

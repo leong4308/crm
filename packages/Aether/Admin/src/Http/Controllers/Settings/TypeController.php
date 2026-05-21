@@ -2,12 +2,12 @@
 
 namespace Aether\Admin\Http\Controllers\Settings;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
 use Aether\Admin\DataGrids\Settings\TypeDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Lead\Repositories\TypeRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
 
 class TypeController extends Controller
 {

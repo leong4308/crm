@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use Aether\Installer\Database\Seeders\DatabaseSeeder as AetherDatabaseSeeder;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {

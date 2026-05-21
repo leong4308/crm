@@ -2,11 +2,11 @@
 
 namespace Aether\WebForm\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Core\Contracts\Validations\Decimal;
 use Aether\WebForm\Rules\PhoneNumber;
+use Illuminate\Foundation\Http\FormRequest;
 
 class WebForm extends FormRequest
 {

@@ -2,9 +2,9 @@
 
 namespace Aether\Admin\Http\Controllers;
 
+use Aether\Admin\Helpers\Dashboard;
 use Illuminate\Http\JsonResponse;
 use Illuminate\View\View;
-use Aether\Admin\Helpers\Dashboard;
 
 class DashboardController extends Controller
 {

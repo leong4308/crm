@@ -1,11 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Aether\Admin\Http\Controllers\DashboardController;
 use Aether\Admin\Http\Controllers\DataGrid\SavedFilterController;
 use Aether\Admin\Http\Controllers\DataGridController;
 use Aether\Admin\Http\Controllers\TinyMCEController;
 use Aether\Admin\Http\Controllers\User\AccountController;
+use Illuminate\Support\Facades\Route;
 
 /**
  * Rutas del tablero.

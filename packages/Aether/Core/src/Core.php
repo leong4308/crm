@@ -2,11 +2,11 @@
 
 namespace Aether\Core;
 
-use Carbon\Carbon;
-use Illuminate\Support\Collection;
 use Aether\Core\Repositories\CoreConfigRepository;
 use Aether\Core\Repositories\CountryRepository;
 use Aether\Core\Repositories\CountryStateRepository;
+use Carbon\Carbon;
+use Illuminate\Support\Collection;
 
 class Core
 {
@@ -26,8 +26,7 @@ class Core
         protected CountryRepository $countryRepository,
         protected CoreConfigRepository $coreConfigRepository,
         protected CountryStateRepository $countryStateRepository
-    ) {
-    }
+    ) {}
 
     /**
      * Obtenga el número de versión de CRM v1.
@@ -185,7 +184,7 @@ class Core
     {
         $ts = strtotime($date);
 
-        if (!$day) {
+        if (! $day) {
             $start = (date('D', $ts) == 'Sun') ? $ts : strtotime('last sunday', $ts);
 
             return date('Y-m-d', $start);
@@ -204,7 +203,7 @@ class Core
      */
     public function currencySymbol($code)
     {
-        $formatter = new \NumberFormatter('en@currency=' . $code, \NumberFormatter::CURRENCY);
+        $formatter = new \NumberFormatter('en@currency='.$code, \NumberFormatter::CURRENCY);
 
         return $formatter->getSymbol(\NumberFormatter::CURRENCY_SYMBOL);
     }

@@ -2,8 +2,8 @@
 
 namespace Aether\Core;
 
-use Illuminate\Support\Facades\Vite as BaseVite;
 use Aether\Core\Exceptions\ViterNotFound;
+use Illuminate\Support\Facades\Vite as BaseVite;
 
 class Vite
 {

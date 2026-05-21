@@ -2,9 +2,9 @@
 
 namespace Aether\Marketing\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\EmailTemplate\Models\EmailTemplateProxy;
 use Aether\Marketing\Contracts\Campaign as CampaignContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Campaign extends Model implements CampaignContract
 {

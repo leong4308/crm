@@ -2,14 +2,6 @@
 
 namespace Aether\Admin\Http\Controllers\Quote;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Event;
-use Illuminate\View\View;
-use Prettus\Repository\Criteria\RequestCriteria;
-use Symfony\Component\HttpFoundation\StreamedResponse;
 use Aether\Admin\DataGrids\Quote\QuoteDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\AttributeForm;
@@ -19,6 +11,14 @@ use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Core\Traits\PDFHandler;
 use Aether\Lead\Repositories\LeadRepository;
 use Aether\Quote\Repositories\QuoteRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Event;
+use Illuminate\View\View;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class QuoteController extends Controller
 {

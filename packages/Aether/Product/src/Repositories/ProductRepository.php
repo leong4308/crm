@@ -2,12 +2,12 @@
 
 namespace Aether\Product\Repositories;
 
-use Illuminate\Container\Container;
-use Illuminate\Support\Str;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Attribute\Repositories\AttributeValueRepository;
 use Aether\Core\Eloquent\Repository;
 use Aether\Product\Contracts\Product;
+use Illuminate\Container\Container;
+use Illuminate\Support\Str;
 
 class ProductRepository extends Repository
 {

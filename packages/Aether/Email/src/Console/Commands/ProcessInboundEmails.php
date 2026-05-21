@@ -2,8 +2,8 @@
 
 namespace Aether\Email\Console\Commands;
 
-use Illuminate\Console\Command;
 use Aether\Email\InboundEmailProcessor\Contracts\InboundEmailProcessor;
+use Illuminate\Console\Command;
 
 class ProcessInboundEmails extends Command
 {

@@ -2,10 +2,10 @@
 
 namespace Aether\Quote\Repositories;
 
-use Illuminate\Container\Container;
 use Aether\Core\Eloquent\Repository;
 use Aether\Product\Repositories\ProductRepository;
 use Aether\Quote\Contracts\QuoteItem;
+use Illuminate\Container\Container;
 
 class QuoteItemRepository extends Repository
 {

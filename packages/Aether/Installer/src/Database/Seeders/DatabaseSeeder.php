@@ -2,13 +2,13 @@
 
 namespace Aether\Installer\Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use Aether\Installer\Database\Seeders\Attribute\DatabaseSeeder as AttributeSeeder;
 use Aether\Installer\Database\Seeders\Core\DatabaseSeeder as CoreSeeder;
 use Aether\Installer\Database\Seeders\EmailTemplate\DatabaseSeeder as EmailTemplateSeeder;
 use Aether\Installer\Database\Seeders\Lead\DatabaseSeeder as LeadSeeder;
 use Aether\Installer\Database\Seeders\User\DatabaseSeeder as UserSeeder;
 use Aether\Installer\Database\Seeders\Workflow\DatabaseSeeder as WorkflowSeeder;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {

@@ -2,8 +2,8 @@
 
 namespace Aether\Admin\DataGrids\Settings\Marketing;
 
-use Illuminate\Support\Facades\DB;
 use Aether\DataGrid\DataGrid;
+use Illuminate\Support\Facades\DB;
 
 class EventDataGrid extends DataGrid
 {

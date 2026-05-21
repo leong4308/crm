@@ -2,13 +2,6 @@
 
 namespace Aether\Admin\Http\Controllers\Settings;
 
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Resources\Json\JsonResource;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\View\View;
-use Prettus\Repository\Criteria\RequestCriteria;
 use Aether\Admin\DataGrids\Settings\UserDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\MassDestroyRequest;
@@ -18,6 +11,13 @@ use Aether\Admin\Notifications\User\Create as UserCreatedNotification;
 use Aether\User\Repositories\GroupRepository;
 use Aether\User\Repositories\RoleRepository;
 use Aether\User\Repositories\UserRepository;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\View\View;
+use Prettus\Repository\Criteria\RequestCriteria;
 
 class UserController extends Controller
 {
@@ -63,29 +63,29 @@ class UserController extends Controller
     public function store(): View|JsonResponse
     {
         $this->validate(request(), [
-            'email'            => 'required|email|unique:users,email',
-            'name'             => 'required',
-            'password'         => 'nullable',
+            'email' => 'required|email|unique:users,email',
+            'name' => 'required',
+            'password' => 'nullable',
             'confirm_password' => 'nullable|required_with:password|same:password',
-            'role_id'          => 'required',
-            'status'           => 'boolean|in:0,1',
-            'view_permission'  => 'string|in:global,group,individual',
+            'role_id' => 'required',
+            'status' => 'boolean|in:0,1',
+            'view_permission' => 'string|in:global,group,individual',
         ]);
 
         $data = request()->all();
 
         if (request()->has('create_new_role') && request()->input('create_new_role')) {
             $this->validate(request(), [
-                'role_name'        => 'required|unique:roles,name',
+                'role_name' => 'required|unique:roles,name',
                 'role_description' => 'required',
-                'permission_type'  => 'required|in:custom,all',
+                'permission_type' => 'required|in:custom,all',
             ]);
 
             $role = $this->roleRepository->create([
-                'name'            => $data['role_name'],
-                'description'     => $data['role_description'],
+                'name' => $data['role_name'],
+                'description' => $data['role_description'],
                 'permission_type' => $data['permission_type'],
-                'permissions'     => $data['permissions'] ?? [],
+                'permissions' => $data['permissions'] ?? [],
             ]);
 
             $data['role_id'] = $role->id;
@@ -144,29 +144,29 @@ class UserController extends Controller
     public function update(int $id): JsonResponse
     {
         $this->validate(request(), [
-            'email'            => 'required|email|unique:users,email,'.$id,
-            'name'             => 'required|string',
-            'password'         => 'nullable|string|min:6',
+            'email' => 'required|email|unique:users,email,'.$id,
+            'name' => 'required|string',
+            'password' => 'nullable|string|min:6',
             'confirm_password' => 'nullable|required_with:password|same:password',
-            'role_id'          => 'required|integer|exists:roles,id',
-            'status'           => 'nullable|boolean|in:0,1',
-            'view_permission'  => 'required|string|in:global,group,individual',
+            'role_id' => 'required|integer|exists:roles,id',
+            'status' => 'nullable|boolean|in:0,1',
+            'view_permission' => 'required|string|in:global,group,individual',
         ]);
 
         $data = request()->all();
 
         if (request()->has('create_new_role') && request()->input('create_new_role')) {
             $this->validate(request(), [
-                'role_name'        => 'required|unique:roles,name',
+                'role_name' => 'required|unique:roles,name',
                 'role_description' => 'required',
-                'permission_type'  => 'required|in:custom,all',
+                'permission_type' => 'required|in:custom,all',
             ]);
 
             $role = $this->roleRepository->create([
-                'name'            => $data['role_name'],
-                'description'     => $data['role_description'],
+                'name' => $data['role_name'],
+                'description' => $data['role_description'],
                 'permission_type' => $data['permission_type'],
-                'permissions'     => $data['permissions'] ?? [],
+                'permissions' => $data['permissions'] ?? [],
             ]);
 
             $data['role_id'] = $role->id;

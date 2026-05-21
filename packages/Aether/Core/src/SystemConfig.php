@@ -2,11 +2,11 @@
 
 namespace Aether\Core;
 
+use Aether\Core\Repositories\CoreConfigRepository;
+use Aether\Core\SystemConfig\Item;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Config;
-use Aether\Core\Repositories\CoreConfigRepository;
-use Aether\Core\SystemConfig\Item;
 
 class SystemConfig
 {

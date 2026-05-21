@@ -2,10 +2,10 @@
 
 namespace Aether\Admin\DataGrids\Product;
 
-use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Facades\DB;
 use Aether\DataGrid\DataGrid;
 use Aether\Tag\Repositories\TagRepository;
+use Illuminate\Database\Query\Builder;
+use Illuminate\Support\Facades\DB;
 
 class ProductDataGrid extends DataGrid
 {

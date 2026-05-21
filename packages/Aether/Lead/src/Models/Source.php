@@ -2,8 +2,8 @@
 
 namespace Aether\Lead\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\Lead\Contracts\Source as SourceContract;
+use Illuminate\Database\Eloquent\Model;
 
 class Source extends Model implements SourceContract
 {

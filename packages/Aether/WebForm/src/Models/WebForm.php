@@ -2,8 +2,8 @@
 
 namespace Aether\WebForm\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Aether\WebForm\Contracts\WebForm as WebFormContract;
+use Illuminate\Database\Eloquent\Model;
 
 class WebForm extends Model implements WebFormContract
 {

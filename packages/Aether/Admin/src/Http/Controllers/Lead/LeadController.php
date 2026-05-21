@@ -2,14 +2,6 @@
 
 namespace Aether\Admin\Http\Controllers\Lead;
 
-use Carbon\Carbon;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
-use Illuminate\Support\Facades\Event;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\View\View;
-use Prettus\Repository\Criteria\RequestCriteria;
 use Aether\Admin\DataGrids\Lead\LeadDataGrid;
 use Aether\Admin\Http\Controllers\Controller;
 use Aether\Admin\Http\Requests\LeadForm;
@@ -31,6 +23,14 @@ use Aether\Quote\Repositories\QuoteItemRepository;
 use Aether\Quote\Repositories\QuoteRepository;
 use Aether\Tag\Repositories\TagRepository;
 use Aether\User\Repositories\UserRepository;
+use Carbon\Carbon;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\View\View;
+use Prettus\Repository\Criteria\RequestCriteria;
 
 class LeadController extends Controller
 {
@@ -171,7 +171,7 @@ class LeadController extends Controller
 
         $data['status'] = 1;
 
-        if (!empty($data['lead_pipeline_stage_id'])) {
+        if (! empty($data['lead_pipeline_stage_id'])) {
             $stage = $this->stageRepository->findOrFail($data['lead_pipeline_stage_id']);
 
             $data['lead_pipeline_id'] = $stage->lead_pipeline_id;
@@ -206,7 +206,7 @@ class LeadController extends Controller
 
         session()->flash('success', trans('admin::app.leads.create-success'));
 
-        if (!empty($data['lead_pipeline_id'])) {
+        if (! empty($data['lead_pipeline_id'])) {
             $params['pipeline_id'] = $data['lead_pipeline_id'];
         }
 
@@ -240,7 +240,7 @@ class LeadController extends Controller
 
         if (
             $userIds
-            && !in_array($lead->user_id, $userIds)
+            && ! in_array($lead->user_id, $userIds)
         ) {
             return redirect()->route('admin.leads.index');
         }
@@ -334,11 +334,11 @@ class LeadController extends Controller
             'entity_type' => 'leads',
             'lead_pipeline_stage_id' => $stage->id,
         ])->only([
-                    'closed_at',
-                    'lost_reason',
-                    'lead_pipeline_stage_id',
-                    'entity_type',
-                ]);
+            'closed_at',
+            'lost_reason',
+            'lead_pipeline_stage_id',
+            'entity_type',
+        ]);
 
         $lead = $this->leadRepository->update($payload, $id, ['lead_pipeline_stage_id']);
 
@@ -514,8 +514,8 @@ class LeadController extends Controller
          * Obtención según las opciones de columna.
          */
         return app($column['filterable_options']['repository'])
-            ->select([$column['filterable_options']['column']['label'] . ' as label', $column['filterable_options']['column']['value'] . ' as value'])
-            ->where($column['filterable_options']['column']['label'], 'LIKE', '%' . $params['search'] . '%')
+            ->select([$column['filterable_options']['column']['label'].' as label', $column['filterable_options']['column']['value'].' as value'])
+            ->where($column['filterable_options']['column']['label'], 'LIKE', '%'.$params['search'].'%')
             ->get()
             ->map
             ->only('label', 'value');
@@ -669,7 +669,7 @@ class LeadController extends Controller
 
         if (
             empty($leadData)
-            && !empty($errorMessages)
+            && ! empty($errorMessages)
         ) {
             return response()->json(MagicAI::errorHandler(implode(', ', $errorMessages)), 400);
         }
@@ -693,7 +693,7 @@ class LeadController extends Controller
     {
         $validator = Validator::make(
             ['file' => $file],
-            ['file' => 'required|extensions:' . str_replace(' ', '', self::SUPPORTED_TYPES)]
+            ['file' => 'required|extensions:'.str_replace(' ', '', self::SUPPORTED_TYPES)]
         );
 
         if ($validator->fails()) {

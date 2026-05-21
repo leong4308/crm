@@ -2,9 +2,9 @@
 
 namespace Aether\Automation\Models;
 
+use Aether\Automation\Contracts\Webhook as ContractsWebhook;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Aether\Automation\Contracts\Webhook as ContractsWebhook;
 
 class Webhook extends Model implements ContractsWebhook
 {

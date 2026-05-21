@@ -22,7 +22,7 @@ class ServeCommand extends BaseServeCommand
     public function handle()
     {
         $this->line('<info>Iniciando entorno de desarrollo...</info>');
-        
+
         $port = $this->option('port') ?: 8000;
         $host = $this->option('host') ?: '127.0.0.1';
 
@@ -34,7 +34,7 @@ class ServeCommand extends BaseServeCommand
             $this->output->write($buffer);
         });
 
-        $this->output->writeln('  <fg=green;options=bold>➜</>  <options=bold>CRM Aether:</>  <fg=cyan>http://' . $host . ':' . $port . '/admin</>');
+        $this->output->writeln('  <fg=green;options=bold>➜</>  <options=bold>CRM Aether:</>  <fg=cyan>http://'.$host.':'.$port.'/admin</>');
         $this->output->writeln('  <fg=green;options=bold>➜</>  <options=bold>OpenWA Dashboard:</> <fg=cyan>http://localhost:2886</>');
         $this->output->writeln('  <fg=green;options=bold>➜</>  <options=bold>OpenWA API:</> <fg=cyan>http://localhost:2785/api/docs</>');
         $this->line('');

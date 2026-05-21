@@ -2,10 +2,10 @@
 
 namespace Aether\Automation\Helpers\Entity;
 
-use Carbon\Carbon;
 use Aether\Attribute\Repositories\AttributeRepository;
 use Aether\Automation\Repositories\WebhookRepository;
 use Aether\Automation\Services\WebhookService;
+use Carbon\Carbon;
 
 abstract class AbstractEntity
 {
